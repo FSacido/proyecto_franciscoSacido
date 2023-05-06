@@ -1,0 +1,17 @@
+.galeriaMedia   {
+    display: none;
+}
+.galeriaNormal  {
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    .galeriaMedia    {
+        display: block;
+        height: 65vh;
+    }
+}
+@media screen and (min-width: 992px) {
+    .galeriaNormal    {
+        display: block;
+    }
+}

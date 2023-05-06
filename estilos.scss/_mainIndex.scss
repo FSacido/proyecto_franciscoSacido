@@ -1,0 +1,6 @@
+.inicio     {
+    height: 80vh;
+    background-color: map-get($sombras,sombra1);
+    animation-name: publicidad;
+    animation-duration: 6s;
+}

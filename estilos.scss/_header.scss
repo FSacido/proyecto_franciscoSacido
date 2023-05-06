@@ -1,0 +1,36 @@
+
+.cabecera {
+  background-image: $header-imagen;
+    .contenedorLogo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .logo {
+        width: 6.2rem;
+      }
+    } 
+    .barra {
+      display: none;
+    }
+    .hamburguesa {
+      display: none;
+    }
+  }
+@media screen and (max-width: 991px) {
+  .bodyInicio {
+    .cabecera {
+      .hamburguesa  {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .bodyInicio {
+    .cabecera {
+      .barra    {
+        display: block;
+      }
+    }
+  }
+}

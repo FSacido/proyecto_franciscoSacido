@@ -1,0 +1,76 @@
+.venta  {
+    height: 90vh;
+    .ventaNormal {
+        display: none;
+        .card {
+            width: 150px;
+            height: 200px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+              &:hover {
+              transform: scale(1.1);
+              }
+              img {
+              width: 100%;
+              object-fit: cover;
+            }
+              h2 {
+                font-size: 1rem;
+                color: $color-textos;
+              }
+              .textoTarjeta {
+              text-align: center;
+            }
+          }
+    
+    }
+    .ventaMedia {
+        display: none;
+        .card {
+            flex-wrap: wrap;
+            width: 150px;
+            height: 200px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+              &:hover {
+              transform: scale(1.1);
+              }
+              img {
+              width: 100%;
+              object-fit: cover;
+            }
+              h2 {
+                font-size: 1rem;
+                color: $color-textos;
+              }
+              .textoTarjeta {
+              text-align: center;
+            }
+          }
+    
+    }
+    .separa {
+        height: 3vh;
+    }  
+}
+
+@media screen and (max-width: 991px) {
+    .venta {
+        .ventaMedia    {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .venta {
+        .ventaNormal    {
+            display: block;
+        }
+    }
+}
+  
+  
+  
+  

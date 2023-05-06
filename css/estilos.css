@@ -1,152 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-*   {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body    {
-    font-family: 'Rubik', sans-serif;
+
+.titulo {
+  color: rgb(194, 194, 194);
 }
-.bodyInicio    {
-    background-image: url(../assets/img/WSPtodo\ el\ mundo.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bodyClub   {
-    background-image: url(../assets/img/varela\ viejo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bodyGaleria    {
-    background-image: url(../assets/img/WSP\ ABRA.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} 
-.bodyContacto    {
-    background-image: url(../assets/img/WSPFiesta.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} 
-.cabecera   {
-    background-image: radial-gradient(circle, #287e28, #227522, #1c6c1c, #156315, #0e5a0f, #08530e, #044d0c, #00460b, #00400d, #003a0e, #00340e, #002e0e);
-}
-.contenedorLogo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.logo   {
-    width: 6.2rem;
-}
-.barra  {
-    display: none;
-  ;
-}
-.hamburguesa    {
-    display: none;
-}
-.inicio     {
-    height: 80vh;
-}
-.sombraInicio   {
-    background-color: rgba(0, 0, 0, 0.363);  
-}
+
 .sombra {
-    background-color: rgba(0, 0, 0, 0.76);    
-}   
-.titulo     {
-    color: rgb(194, 194, 194);
+  background-color: rgba(0, 0, 0, 0.76);
 }
-.hoy    {
-    background-image: url(../assets/img/Drive\ club.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 80vh;
+
+hr {
+  color: rgb(194, 194, 194);
 }
-.formularioNormal {
-    display: none;
-    color: rgb(194, 194, 194);
-    background-color: rgba(0, 0, 0, 0.658);
+
+@keyframes publicidad {
+  0% {
+    transform: translateY(100vh);
+  }
 }
-.formularioMedia {
-    display: none;
-    color: rgb(194, 194, 194);
-    background-color: rgba(0, 0, 0, 0.658);
+@keyframes publicidad2 {
+  0% {
+    transform: scale(2.5, 2.5);
+  }
 }
-.hr{
-    color: white;
+body {
+  font-family: "Rubik", sans-serif;
 }
-.derechos   {
-    color: rgb(194, 194, 194);
+
+.bodyInicio, .hoy, .bodyShop, .bodyContacto, .bodyGaleria, .bodyClub {
+  background-image: url(../assets/img/WSPtodo\ el\ mundo.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.iconos     {
-    font-size: 3.5vh;
+
+.bodyClub {
+  background-image: url(../assets/img/varela\ viejo.jpg);
 }
-.galeriaMedia   {
-    display: none;
+
+.bodyGaleria {
+  background-image: url(../assets/img/WSP\ ABRA.jpeg);
 }
-.galeriaNormal  {
-    display: none;
+
+.bodyContacto {
+  background-image: url(../assets/img/WSPFiesta.jpeg);
 }
-.mapa   {
-    background-color: rgba(0, 0, 0, 0.658);
+
+.bodyShop {
+  background-image: url(../assets/img/Drive\ Risas.jpg);
 }
-.mapasNormal     {
-    display: none;
+
+.cabecera {
+  background-image: radial-gradient(circle, #287e28, #227522, #1c6c1c, #156315, #0e5a0f, #08530e, #044d0c, #00460b, #00400d, #003a0e, #00340e, #002e0e);
 }
-.mapasMedia  {
-    display: none;
+.cabecera .contenedorLogo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+.cabecera .contenedorLogo .logo {
+  width: 6.2rem;
+}
+.cabecera .barra {
+  display: none;
+}
+.cabecera .hamburguesa {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
-    .hamburguesa    {
-        display: block;
-    }
-    .galeriaMedia    {
-        display: block;
-        height: 65vh;
-    }
-    .mapasMedia  {
-        display: block;
-        height: 80vh;
-    }
-    .formularioMedia    {
-        display: block;
-        width: 250px;
-        height: 250px;
-    }
-    
+  .bodyInicio .cabecera .hamburguesa, .hoy .cabecera .hamburguesa, .bodyClub .cabecera .hamburguesa, .bodyGaleria .cabecera .hamburguesa, .bodyContacto .cabecera .hamburguesa, .bodyShop .cabecera .hamburguesa {
+    display: block;
+  }
 }
 @media screen and (min-width: 992px) {
-    .barra    {
-        display: block;
-    }
-    .galeriaNormal    {
-        display: block;
-    }
-    .mapasNormal     {
-        display: block;
-        height: 70vh;
-    }
-    .formularioNormal   {
-        display: block;
-    }
-    
+  .bodyInicio .cabecera .barra, .hoy .cabecera .barra, .bodyClub .cabecera .barra, .bodyGaleria .cabecera .barra, .bodyContacto .cabecera .barra, .bodyShop .cabecera .barra {
+    display: block;
+  }
+}
+.derechos {
+  color: rgb(194, 194, 194);
 }
 
-    
-    
+.iconos {
+  font-size: 3.5vh;
+}
 
+.inicio {
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.363);
+  animation-name: publicidad;
+  animation-duration: 6s;
+}
 
-   
+.hoy {
+  background-image: url(../assets/img/Drive\ club.jpeg);
+  background-size: contain;
+  height: 80vh;
+}
 
-    
+.galeriaMedia {
+  display: none;
+}
+
+.galeriaNormal {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .galeriaMedia {
+    display: block;
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .galeriaNormal {
+    display: block;
+  }
+}
+.formularioNormal {
+  display: none;
+  color: rgb(194, 194, 194);
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
+.formularioMedia {
+  display: none;
+  color: rgb(194, 194, 194);
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
+.mapasNormal {
+  display: none;
+}
+.mapasNormal .mapa {
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
+.mapasMedia {
+  display: none;
+}
+.mapasMedia .mapa {
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
+@media screen and (min-width: 992px) {
+  .formularioNormal {
+    display: block;
+  }
+  .mapasNormal {
+    display: block;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .formularioMedia {
+    display: block;
+    width: 250px;
+    height: 250px;
+  }
+  .mapasMedia {
+    display: block;
+    height: 80vh;
+  }
+}
+.venta {
+  height: 90vh;
+}
+.venta .ventaNormal {
+  display: none;
+}
+.venta .ventaNormal .card {
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.venta .ventaNormal .card:hover {
+  transform: scale(1.1);
+}
+.venta .ventaNormal .card img {
+  width: 100%;
+  object-fit: cover;
+}
+.venta .ventaNormal .card h2 {
+  font-size: 1rem;
+  color: rgb(194, 194, 194);
+}
+.venta .ventaNormal .card .textoTarjeta {
+  text-align: center;
+}
+.venta .ventaMedia {
+  display: none;
+}
+.venta .ventaMedia .card {
+  flex-wrap: wrap;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.venta .ventaMedia .card:hover {
+  transform: scale(1.1);
+}
+.venta .ventaMedia .card img {
+  width: 100%;
+  object-fit: cover;
+}
+.venta .ventaMedia .card h2 {
+  font-size: 1rem;
+  color: rgb(194, 194, 194);
+}
+.venta .ventaMedia .card .textoTarjeta {
+  text-align: center;
+}
+.venta .separa {
+  height: 3vh;
+}
+
+@media screen and (max-width: 991px) {
+  .venta .ventaMedia {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .venta .ventaNormal {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

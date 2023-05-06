@@ -1,0 +1,9 @@
+.titulo     {
+    color: $color-textos;
+}
+.sombra {
+    background-color: map-get($sombras,sombra3);
+}
+hr {
+    color: $color-textos;
+}

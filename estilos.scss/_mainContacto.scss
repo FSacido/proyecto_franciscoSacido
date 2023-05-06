@@ -1,0 +1,44 @@
+.formularioNormal {
+    display: none;
+    color: $color-textos;
+    background-color: map-get($sombras,sombra2);
+}
+.formularioMedia {
+    display: none;
+    color: $color-textos;
+    background-color: map-get($sombras,sombra2);
+}
+.mapasNormal     {
+    display: none;
+     .mapa   {
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+}
+.mapasMedia  {
+    display: none;
+     .mapa   {
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+}
+@media screen and (min-width: 992px) {
+    .formularioNormal   {
+        display: block;
+    }
+    .mapasNormal     {
+        display: block;
+        height: 70vh;
+}
+    
+}
+@media screen and (max-width: 991px) {
+   .formularioMedia    {
+        display: block;
+        width: 250px;
+        height: 250px;
+    }
+    .mapasMedia  {
+        display: block;
+        height: 80vh;
+    }
+}
+    

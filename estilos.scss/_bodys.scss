@@ -1,0 +1,26 @@
+body    {
+    font-family: 'Rubik', sans-serif;
+}
+.bodyInicio {
+    background-image: url(../assets/img/WSPtodo\ el\ mundo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bodyClub   {
+    @extend .bodyInicio;
+    background-image: url(../assets/img/varela\ viejo.jpg);
+}
+.bodyGaleria    {
+    @extend .bodyInicio;
+    background-image: url(../assets/img/WSP\ ABRA.jpeg);
+} 
+.bodyContacto    {
+    @extend .bodyInicio;
+    background-image: url(../assets/img/WSPFiesta.jpeg);
+} 
+.bodyShop   {
+    @extend .bodyInicio;
+    background-image: url(../assets/img/Drive\ Risas.jpg);
+}
