@@ -24,3 +24,7 @@ body    {
     @extend .bodyInicio;
     background-image: url(../assets/img/Drive\ Risas.jpg);
 }
+.bodyError   {
+    @extend .bodyInicio;
+    background-image: url(../assets/img/Error2.jpg);
+}

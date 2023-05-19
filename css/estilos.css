@@ -31,7 +31,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.bodyInicio, .hoy, .bodyShop, .bodyContacto, .bodyGaleria, .bodyClub {
+.bodyInicio, .hoy, .bodyError, .bodyShop, .bodyContacto, .bodyGaleria, .bodyClub {
   background-image: url(../assets/img/WSPtodo\ el\ mundo.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +55,10 @@ body {
   background-image: url(../assets/img/Drive\ Risas.jpg);
 }
 
+.bodyError {
+  background-image: url(../assets/img/Error2.jpg);
+}
+
 .cabecera {
   background-image: radial-gradient(circle, #287e28, #227522, #1c6c1c, #156315, #0e5a0f, #08530e, #044d0c, #00460b, #00400d, #003a0e, #00340e, #002e0e);
 }
@@ -74,12 +78,12 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .bodyInicio .cabecera .hamburguesa, .hoy .cabecera .hamburguesa, .bodyClub .cabecera .hamburguesa, .bodyGaleria .cabecera .hamburguesa, .bodyContacto .cabecera .hamburguesa, .bodyShop .cabecera .hamburguesa {
+  .bodyInicio .cabecera .hamburguesa, .hoy .cabecera .hamburguesa, .bodyClub .cabecera .hamburguesa, .bodyGaleria .cabecera .hamburguesa, .bodyContacto .cabecera .hamburguesa, .bodyShop .cabecera .hamburguesa, .bodyError .cabecera .hamburguesa {
     display: block;
   }
 }
 @media screen and (min-width: 992px) {
-  .bodyInicio .cabecera .barra, .hoy .cabecera .barra, .bodyClub .cabecera .barra, .bodyGaleria .cabecera .barra, .bodyContacto .cabecera .barra, .bodyShop .cabecera .barra {
+  .bodyInicio .cabecera .barra, .hoy .cabecera .barra, .bodyClub .cabecera .barra, .bodyGaleria .cabecera .barra, .bodyContacto .cabecera .barra, .bodyShop .cabecera .barra, .bodyError .cabecera .barra {
     display: block;
   }
 }
@@ -91,11 +95,12 @@ body {
   font-size: 3.5vh;
 }
 
-.inicio {
+.inicio, .error404, .error404Media {
   height: 80vh;
   background-color: rgba(0, 0, 0, 0.363);
   animation-name: publicidad;
   animation-duration: 6s;
+  color: rgb(194, 194, 194);
 }
 
 .hoy {
@@ -232,6 +237,33 @@ body {
 }
 @media screen and (min-width: 992px) {
   .venta .ventaNormal {
+    display: block;
+  }
+}
+.error404, .error404Media {
+  display: none;
+  color: rgb(194, 194, 194);
+}
+.error404 .textoError, .error404Media .textoError {
+  font-size: 30vh;
+  margin-top: 10vh;
+}
+
+.error404Media {
+  display: none;
+  color: rgb(194, 194, 194);
+}
+.error404Media .textoMedia {
+  font-size: 12vh;
+}
+
+@media screen and (max-width: 991px) {
+  .error404Media {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .error404, .error404Media {
     display: block;
   }
 }

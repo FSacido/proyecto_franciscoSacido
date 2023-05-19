@@ -1,0 +1,29 @@
+.error404   {
+    @extend .inicio;
+    display: none;
+    color: $color-textos;
+    .textoError {
+        font-size: 30vh;
+        margin-top: 10vh;
+    }
+}
+.error404Media {
+    @extend .error404;
+    display: none;
+    color: $color-textos;
+    .textoMedia {
+        font-size: 12vh;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .error404Media {
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .error404 {
+     display: block;
+    }
+}
